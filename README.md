@@ -161,32 +161,3 @@ Preview the production build locally:
 npm run preview
 ```
 
-### 6. Deployment to Vercel
-The project includes a ready-to-use `vercel.json` configured for single-page routing:
-- Push the repository to GitHub.
-- Import the repository in [Vercel](https://vercel.com).
-- Framework Preset: **Vite**.
-- Build Command: `npm run build`.
-- Output Directory: `dist`.
-- Click **Deploy**.
-
----
-
-## Verification & Testing Checklist
-
-- [x] All 4 initial categories render dynamically from JSON.
-- [x] Widgets render with CSS donut charts, horizontal stacked bars, and empty states.
-- [x] "+ Add Widget" buttons and cards open the right-side management drawer.
-- [x] Form validation prevents empty submissions and verifies category selection.
-- [x] Duplicate widget name validation prevents duplicate widgets per category.
-- [x] Widgets can be assigned to multiple categories with a unified widget ID.
-- [x] Remove icon ("X") cleanly removes widget from the active category.
-- [x] Category checkbox toggling assigns and unassigns widgets dynamically.
-- [x] Header search filters in real time across widget names, category names, and content text.
-- [x] Empty search state displays when no widgets match the search query.
-- [x] LocalStorage preserves all state modifications across page reloads.
-- [x] Reset to default state restores the original assignment seed data.
-- [x] Summary metrics calculate dynamically from live dashboard state.
-- [x] Responsive layout adapts smoothly across desktop, tablet, and mobile.
-- [x] Production build (`npm run build`) builds cleanly with zero errors.
-- [x] ESLint passes with zero errors and zero warnings (`npx eslint src`).
